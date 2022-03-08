@@ -31,6 +31,10 @@ async def on_message(message):
     await message.channel.send("I'm doing great! How are you?")
     return
 
+  elif 'lol' in message.content.lower():
+    await message.channel.send(":joy: lol")
+    return
+    
   elif ('sniperwolf' or 'sssniperwolf') in message.content.lower():
     embed.set_image(url='https://tenor.com/view/sssniperwolf-gif-18432997')
     await message.channel.send(embed=embed)
